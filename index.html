@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEC ENGINEERING-Inicio</title>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="ELEC ENGINEERING S.A.S - Especialistas en soluciones eléctricas profesionales para sectores residencial, industrial y comercial. Cumplimos normativas RETIE y RITEL. Más de 8 años de experiencia en Bogotá, Colombia.">
+    <meta name="keywords" content="ingeniería eléctrica, instalaciones eléctricas, cableado estructurado, telecomunicaciones, RETIE, RITEL, Bogotá, Colombia, electricista profesional">
+    <meta name="author" content="ELEC ENGINEERING S.A.S">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elecengineering.com/">
+    <meta property="og:title" content="ELEC ENGINEERING S.A.S - Soluciones Eléctricas Profesionales">
+    <meta property="og:description" content="Especialistas en soluciones eléctricas profesionales para sectores residencial, industrial y comercial. Más de 8 años de experiencia en Bogotá, Colombia.">
+    <meta property="og:image" content="https://elecengineering.com/images/Hero Section.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elecengineering.com/">
+    <meta property="twitter:title" content="ELEC ENGINEERING S.A.S - Soluciones Eléctricas Profesionales">
+    <meta property="twitter:description" content="Especialistas en soluciones eléctricas profesionales para sectores residencial, industrial y comercial. Más de 8 años de experiencia en Bogotá, Colombia.">
+    <meta property="twitter:image" content="https://elecengineering.com/images/Hero Section.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Imagen4-fotor-20250908212958.png">
+    <link rel="apple-touch-icon" href="images/Imagen4-fotor-20250908212958.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css?v=18">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-3 logo-container">
+                    <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio">
+                        <img src="images/Imagen4-fotor-20250908212958.png" alt="ELEC ENGINEERING Logo" class="logo-img me-2">
+                        <span class="d-none d-md-inline">ELEC ENGINEERING</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="col-auto d-none d-lg-block">
+                    <nav class="navbar-nav-container">
+                        <ul class="navbar-nav-list">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html" data-translate="nav-inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre-nosotros.html" data-translate="nav-sobre-nosotros">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html" data-translate="nav-servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html" data-translate="nav-galeria">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html" data-translate="nav-contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Language buttons and mobile menu -->
+                <div class="col-1 col-md-9 col-lg-1 text-end">
+                    <div class="d-flex align-items-center justify-content-end gap-2">
+                        <!-- Language buttons -->
+                        <div class="language-buttons d-none d-md-flex">
+                            <button class="btn btn-outline-primary btn-sm" id="language-toggle-colombia" onclick="toggleLanguageColombia()" title="Español">
+                                <img src="images/Flag_of_Colombia.png" alt="Español" class="flag-icon">
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm" id="language-toggle-us" onclick="toggleLanguageUS()" title="English US">
+                                <img src="images/Flag_of_the_United_States.png" alt="English US" class="flag-icon">
+                            </button>
+                        </div>
+                        
+                        <!-- Mobile menu button -->
+                        <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="collapse d-lg-none" id="mobileNavbar">
+                <div class="mobile-nav-container">
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav-list">
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link active" href="index.html" data-translate="nav-inicio">Inicio</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="sobre-nosotros.html" data-translate="nav-sobre-nosotros">Sobre Nosotros</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="servicios.html" data-translate="nav-servicios">Servicios</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="galeria.html" data-translate="nav-galeria">Galería</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="contacto.html" data-translate="nav-contacto">Contacto</a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Mobile language buttons -->
+                        <div class="mobile-language-buttons">
+                            <button class="btn btn-outline-primary btn-sm" id="mobile-language-toggle-colombia" onclick="toggleLanguageColombia()" title="Español">
+                                <img src="images/Flag_of_Colombia.png" alt="Español" class="flag-icon">
+                                <span>Español</span>
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm" id="mobile-language-toggle-us" onclick="toggleLanguageUS()" title="English US">
+                                <img src="images/Flag_of_the_United_States.png" alt="English US" class="flag-icon">
+                                <span>English</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section" aria-label="Sección principal">
+            <div class="container-fluid">
+                <div class="row vh-100">
+                    <div class="col-lg-6 hero-content d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h1 class="display-3 fw-bold text-dark mb-4">ELEC ENGINEERING</h1>
+                            <p class="lead text-muted mb-4" data-translate="hero-subtitle">Especialistas en soluciones eléctricas profesionales</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hero-image d-flex align-items-center justify-content-center p-0">
+                        <img src="images/Hero Section.png" alt="Electricista trabajando" class="img-fluid hero-img" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="py-5" aria-label="Sobre nosotros">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" data-translate="about-title">Sobre Nosotros</h2>
+                        
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p class="lead" data-translate="about-description">Con más de 8 años de experiencia, somos especialistas en soluciones eléctricas profesionales para los sectores residencial, industrial y comercial. Ofrecemos servicios integrales en sistemas eléctricos, cableado estructurado y telecomunicaciones, cumpliendo con las normativas RETIE y RITEL. Nuestro equipo especializado garantiza la más alta calidad en cada proyecto, utilizando metodología BIM y herramientas avanzadas como Revit para optimizar la eficiencia y precisión en cada etapa.</p>
+                        <div class="d-flex gap-3 mt-4 justify-content-center">
+                            <div class="text-center">
+                                <h4 class="text-primary fw-bold">500+</h4>
+                                <small class="text-muted" data-translate="projects-count">Proyectos</small>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-primary fw-bold">50+</h4>
+                                <small class="text-muted" data-translate="clients-count">Clientes</small>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-primary fw-bold">5+</h4>
+                                <small class="text-muted" data-translate="years-count">Años</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-5 bg-light" aria-label="Nuestros servicios">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" data-translate="services-title">Nuestros Servicios</h2>
+                        <p class="lead text-muted" data-translate="services-subtitle">Ofrecemos soluciones completas en sistemas eléctricos y telecomunicaciones</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-3">
+                                    <i class="bi bi-lightning display-4 text-primary"></i>
+                                </div>
+                                <h4 class="card-title" data-translate="service-1-title">Diseño y Construcción Eléctrica</h4>
+                                <p class="card-text" data-translate="service-1-desc">Incluye sistemas eléctricos residenciales, industriales y comerciales, cumpliendo con normativas RETIE.</p>
+                                <a href="servicios.html" class="btn btn-outline-primary" data-translate="more-info">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-3">
+                                    <i class="bi bi-wifi display-4 text-primary"></i>
+                                </div>
+                                <h4 class="card-title" data-translate="service-2-title">Diseño y Construcción de Infraestructura y Telecomunicaciones</h4>
+                                <p class="card-text" data-translate="service-2-desc">Abarca cableado estructurado, conectividad y trámites ante operadores de red, bajo normativa RITEL.</p>
+                                <a href="servicios.html" class="btn btn-outline-primary" data-translate="more-info">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-3">
+                                    <i class="bi bi-gear display-4 text-primary"></i>
+                                </div>
+                                <h4 class="card-title" data-translate="service-3-title">Automatización y Consultoría</h4>
+                                <p class="card-text" data-translate="service-3-desc">Ofrece servicios de interventoría, consultoría, integración de metodología BIM (con herramientas como Revit) y certificación de proyectos.</p>
+                                <a href="servicios.html" class="btn btn-outline-primary" data-translate="more-info">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" data-translate="clients-title">Nuestros Clientes</h2>
+                        <p class="lead text-muted" data-translate="clients-subtitle">Empresas que confían en nuestros servicios</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="clients-carousel">
+                            <div class="clients-track">
+                                <div class="client-logo">
+                                    <img src="images/akila-logo.png" alt="Akila" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/alcabama-new.png" alt="Alcabama" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/amarilo-logo.png" alt="Amarilo" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/arco_consultor_a__construcci_n_logo.jpg" alt="Arco Consultoría" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/bogota-limpia.png" alt="Bogotá Limpia" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/incopimar-logo.jpg" alt="Incopimar" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/industrias cruz.png" alt="Industrias Cruz" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/logo-ar-construcciones 1.png" alt="AR Construcciones" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/natura-house.png" alt="Natura House" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/Opticalia.jpg" alt="Opticalia" class="img-fluid" loading="lazy">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/servicios & equipos biomédicos.jpg" alt="Servicios Biomédicos" class="img-fluid" loading="lazy">
+                                </div>
+                                <!-- Duplicar logos para efecto infinito -->
+                                <div class="client-logo">
+                                    <img src="images/akila-logo.png" alt="Akila" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/alcabama-new.png" alt="Alcabama" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/amarilo-logo.png" alt="Amarilo" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/arco_consultor_a__construcci_n_logo.jpg" alt="Arco Consultoría" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/bogota-limpia.png" alt="Bogotá Limpia" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/incopimar-logo.jpg" alt="Incopimar" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/industrias cruz.png" alt="Industrias Cruz" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/logo-ar-construcciones 1.png" alt="AR Construcciones" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/natura-house.png" alt="Natura House" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/Opticalia.jpg" alt="Opticalia" class="img-fluid">
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/servicios & equipos biomédicos.jpg" alt="Servicios Biomédicos" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-5" aria-label="Información de contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" data-translate="contact-title">Contacto</h2>
+                        <p class="lead text-muted" data-translate="contact-subtitle">¿Tienes alguna pregunta? ¡Contáctanos!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4" data-translate="contact-info-title">Información de Contacto</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
+                                    <span>gerenciaelecsas@gmail.com</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-telephone-fill text-primary me-3 fs-5"></i>
+                                    <span>+57 3011781478</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
+                                    <span>Bogotá, Colombia</span>
+                                </div>
+                                <div class="mt-5">
+                                    <h5 class="text-center mb-4" data-translate="follow-us">Síguenos en redes sociales</h5>
+                                    <div class="d-flex gap-4 justify-content-center">
+                                        <a href="https://www.instagram.com/elecengineering/" target="_blank" class="social-icon instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com/@elecengineeringsa" target="_blank" class="social-icon tiktok">
+                                            <i class="fab fa-tiktok"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/people/ELEC-ENGINEERING-SAS/100064467625547/?rdid=7rpRkNdzDKvLlnhp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18bzJeRf2n%2F" target="_blank" class="social-icon facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://api.whatsapp.com/send/?phone=573011781478" target="_blank" class="social-icon whatsapp">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4" data-translate="contact-form-title">Envíanos un mensaje</h4>
+                                <form onsubmit="handleFormSubmit(event)">
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label" data-translate="form-name">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" data-translate="form-name-placeholder" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label" data-translate="form-email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Tu email" data-translate="form-email-placeholder" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label" data-translate="form-message">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" data-translate="form-message-placeholder" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="bi bi-send me-2"></i><span data-translate="send-message">Enviar Mensaje</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ELEC ENGINEERING S.A.S.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="https://www.instagram.com/elecengineering/" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@elecengineeringsa" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/people/ELEC-ENGINEERING-SAS/100064467625547/?rdid=7rpRkNdzDKvLlnhp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18bzJeRf2n%2F" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=573011781478" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

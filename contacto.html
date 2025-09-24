@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEC ENGINEERING-Contacto</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/Imagen4-fotor-20250908212958.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css?v=18">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-3 logo-container">
+                    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                        <img src="images/Imagen4-fotor-20250908212958.png" alt="ELEC ENGINEERING Logo" class="logo-img me-2">
+                        <span class="d-none d-md-inline">ELEC ENGINEERING</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="col-auto d-none d-lg-block">
+                    <nav class="navbar-nav-container">
+                        <ul class="navbar-nav-list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" data-translate="nav-inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre-nosotros.html" data-translate="nav-sobre-nosotros">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html" data-translate="nav-servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html" data-translate="nav-galeria">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html" data-translate="nav-contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Language buttons and mobile menu -->
+                <div class="col-1 col-md-9 col-lg-1 text-end">
+                    <div class="d-flex align-items-center justify-content-end gap-2">
+                        <!-- Language buttons -->
+                        <div class="language-buttons d-none d-md-flex">
+                            <button class="btn btn-outline-primary btn-sm" id="language-toggle-colombia" onclick="toggleLanguageColombia()" title="Español">
+                                <img src="images/Flag_of_Colombia.png" alt="Español" class="flag-icon">
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm" id="language-toggle-us" onclick="toggleLanguageUS()" title="English US">
+                                <img src="images/Flag_of_the_United_States.png" alt="English US" class="flag-icon">
+                            </button>
+                        </div>
+                        
+                        <!-- Mobile menu button -->
+                        <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="collapse d-lg-none" id="mobileNavbar">
+                <div class="mobile-nav-container">
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav-list">
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="index.html" data-translate="nav-inicio">Inicio</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="sobre-nosotros.html" data-translate="nav-sobre-nosotros">Sobre Nosotros</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="servicios.html" data-translate="nav-servicios">Servicios</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link" href="galeria.html" data-translate="nav-galeria">Galería</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a class="mobile-nav-link active" href="contacto.html" data-translate="nav-contacto">Contacto</a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Mobile language buttons -->
+                        <div class="mobile-language-buttons">
+                            <button class="btn btn-outline-primary btn-sm" id="mobile-language-toggle-colombia" onclick="toggleLanguageColombia()" title="Español">
+                                <img src="images/Flag_of_Colombia.png" alt="Español" class="flag-icon">
+                                <span>Español</span>
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm" id="mobile-language-toggle-us" onclick="toggleLanguageUS()" title="English US">
+                                <img src="images/Flag_of_the_United_States.png" alt="English US" class="flag-icon">
+                                <span>English</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container-fluid">
+                <div class="row vh-100">
+                    <div class="col-lg-6 hero-content d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h1 class="display-3 fw-bold text-dark mb-4" data-translate="contact-title">Contacto</h1>
+                            <p class="lead text-muted mb-4" data-translate="contact-subtitle">Estamos aquí para ayudarte con tus proyectos eléctricos</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hero-image d-flex align-items-center justify-content-center p-0">
+                        <img src="images/Hero Section.png" alt="Electricista trabajando" class="img-fluid hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" data-translate="contact-get-in-touch">Ponte en Contacto</h2>
+                        <p class="lead text-muted" data-translate="contact-question">¿Tienes alguna pregunta? ¡Contáctanos!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4" data-translate="contact-info-title">Información de Contacto</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
+                                    <span>gerenciaelecsas@gmail.com</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-telephone-fill text-primary me-3 fs-5"></i>
+                                    <span>+57 3011781478</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
+                                    <span data-translate="contact-address">Cra 73B #32-12 Sur, Bogotá, Colombia</span>
+                                </div>
+                                <div class="mt-5">
+                                    <h5 class="text-center mb-4" data-translate="contact-follow-us">Síguenos en redes sociales</h5>
+                                    <div class="d-flex gap-4 justify-content-center">
+                                        <a href="https://www.instagram.com/elecengineering/" target="_blank" class="social-icon instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com/@elecengineeringsa" target="_blank" class="social-icon tiktok">
+                                            <i class="fab fa-tiktok"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/people/ELEC-ENGINEERING-SAS/100064467625547/?rdid=7rpRkNdzDKvLlnhp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18bzJeRf2n%2F" target="_blank" class="social-icon facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://api.whatsapp.com/send/?phone=573011781478" target="_blank" class="social-icon whatsapp">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-4" data-translate="contact-form-title">Envíanos un mensaje</h4>
+                                <form onsubmit="handleFormSubmit(event)">
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label" data-translate="contact-form-name">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" data-translate="contact-form-name-placeholder" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label" data-translate="contact-form-email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Tu email" data-translate="contact-form-email-placeholder" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label" data-translate="contact-form-message">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" data-translate="contact-form-message-placeholder" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="bi bi-send me-2"></i><span data-translate="contact-form-send">Enviar Mensaje</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" data-translate="contact-location-title">Nuestra Ubicación</h2>
+                        <p class="lead text-muted" data-translate="contact-location-subtitle">Visítanos en nuestras oficinas principales</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="map-container" style="height: 400px; position: relative;">
+                                    <div class="bg-light d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                        <div class="text-center text-white">
+                                            <i class="bi bi-geo-alt display-1 mb-3"></i>
+                                            <h4 data-translate="contact-map-title">Mapa Interactivo</h4>
+                                            <p class="mb-4" data-translate="contact-address">Cra 73B #32-12 Sur, Bogotá, Colombia</p>
+                                            <a href="https://maps.google.com/maps?q=Cra+73B+%2332-12+Sur,+Bogotá,+Colombia" target="_blank" class="btn btn-light btn-lg">
+                                                <i class="bi bi-geo-alt me-2"></i><span data-translate="contact-map-button">Ver en Google Maps</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ELEC ENGINEERING S.A.S.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="https://www.instagram.com/elecengineering/" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@elecengineeringsa" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/people/ELEC-ENGINEERING-SAS/100064467625547/?rdid=7rpRkNdzDKvLlnhp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18bzJeRf2n%2F" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=573011781478" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
